@@ -1,0 +1,77 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.btn {
+  position: relative;
+  box-shadow: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+
+  font-size: 20px;
+  line-height: 100%;
+  //padding: 15px 32px;
+  border: 1px solid rgba(75, 101, 83, 1);
+  text-align: center;
+  display: inline-block;
+  font-weight: 400;
+  border-radius: 0;
+  @include transition(.3);
+  padding: 20px;
+  // min-width: 223px;
+
+  &:hover {
+    & .btn__icon {
+      & i {
+        transform: rotate(45deg);
+      }
+
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+
+  &-primary {
+    border: 1px solid rgba(146, 146, 146, 1);
+    border-radius: 14px;
+    padding: 8px 26px 7px 26px;
+    color: #929292;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+
+  &-view {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+
+    & i {
+      font-size: 22px;
+      color: #3D8EDA;
+      @include transition(.6);
+    }
+
+    &__wrap {
+      margin-bottom: 23px;
+      gap: 21px;
+    }
+
+    &--active {
+      & i {
+        color: #C8C8C8;
+      }
+
+    }
+  }
+
+}
+
+

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="uk" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Reparo</title>
+    <meta name="description" content=""/>
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/app.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+
+</head>
+<body>
+
+<img src="assets/img/decor-1.svg" alt="decor-1" class="decor decor-1">
+<img src="assets/img/decor-2.svg" alt="decor-2" class="decor decor-2">
+<header class="header">
+
+
+    <div class="container">
+        <div class="row m-row">
+            <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column">
+                <div class="project">
+                    <div class="project__inner">
+
+                        <div class="project__avatar">
+                            <img src="assets/img/logo-project.svg" alt="Monblan Project logo">
+                        </div>
+
+                        <div class="project__info">
+
+                            <div class="project__header">
+                                <h1 class="project__name">monblanproject</h1>
+
+                                <span class="project__start">
+          Start on <span class="project__start-date">17-02-2016</span>
+        </span>
+                            </div>
+
+                            <ul class="project__stats">
+                                <li class="project__stat"><strong>870</strong> posts</li>
+                                <li class="project__stat"><strong>11,787</strong> followers</li>
+                                <li class="project__stat"><strong>112</strong> following</li>
+                            </ul>
+
+                            <form class="project__filters">
+                                <div class="date">
+                                    <div class="date__field">
+                                        <input type="text" id="dateFrom" placeholder="from" class="date__input" autocomplete="off">
+                                        <button type="button" class="date__clear" aria-label="Clear date">
+                                            <i class="icon-plus"></i>
+                                        </button>
+                                        <button type="button" class="date__calendar" aria-label="Open calendar">
+                                            <i class="icon-calendar"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="date__field">
+                                        <input type="text" id="dateTo" placeholder="to" class="date__input" autocomplete="off">
+                                        <button type="button" class="date__clear" aria-label="Clear date">
+                                            <i class="icon-plus"></i>
+                                        </button>
+                                        <button type="button" class="date__calendar" aria-label="Open calendar">
+                                            <i class="icon-calendar"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main ">
+
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+
+
+
+    <section class="s-project">
+        <div class="container">
+            <div class="row m-row">
+                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 d-flex align-right column">
+
+
+                    <div class="btn-view__wrap d-flex align-middle align-right">
+                        <button type="button" class="btn-view d-flex align-center align-middle" id="gridBtn">
+                            <i class="icon-grid"></i>
+                        </button>
+                        <button type="button" class="btn-view btn-view--active d-flex align-center align-middle"
+                                id="listBtn">
+                            <i class="icon-list"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row m-row">
+                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 column">
+                    <div class="posts " id="postsSection">
+                        <div class="post">
+                            <div class="post__image">
+                                <img src="assets/img/1.png" alt="Uploaded image">
+                            </div>
+
+                            <div class="post__content">
+                                <div class="post__meta">
+                                    <span class="post__date">Today</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__meta">
+                                    <span class="post__date">9-08-2016</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__upload">
+                                    <span class="post__upload-title">Image upload</span>
+                                    <span class="post__upload-date">11-04-2016</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post__image">
+                                <img src="assets/img/2.png" alt="Uploaded image">
+                            </div>
+
+                            <div class="post__content">
+                                <div class="post__meta">
+                                    <span class="post__date">Today</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__meta">
+                                    <span class="post__date">9-08-2016</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__upload">
+                                    <span class="post__upload-title">Image upload</span>
+                                    <span class="post__upload-date">11-04-2016</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post">
+                            <div class="post__image">
+                                <img src="assets/img/3.png" alt="Uploaded image">
+                            </div>
+
+                            <div class="post__content">
+                                <div class="post__meta">
+                                    <span class="post__date">Today</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__meta">
+                                    <span class="post__date">9-08-2016</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__upload">
+                                    <span class="post__upload-title">Image upload</span>
+                                    <span class="post__upload-date">11-04-2016</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post__image">
+                                <img src="assets/img/4.png" alt="Uploaded image">
+                            </div>
+
+                            <div class="post__content">
+                                <div class="post__meta">
+                                    <span class="post__date">Today</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__meta">
+                                    <span class="post__date">9-08-2016</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__upload">
+                                    <span class="post__upload-title">Image upload</span>
+                                    <span class="post__upload-date">11-04-2016</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post__image">
+                                <img src="assets/img/5.png" alt="Uploaded image">
+                            </div>
+
+                            <div class="post__content">
+                                <div class="post__meta">
+                                    <span class="post__date">Today</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__meta">
+                                    <span class="post__date">9-08-2016</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__upload">
+                                    <span class="post__upload-title">Image upload</span>
+                                    <span class="post__upload-date">11-04-2016</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post__image">
+                                <img src="assets/img/6.png" alt="Uploaded image">
+                            </div>
+
+                            <div class="post__content">
+                                <div class="post__meta">
+                                    <span class="post__date">Today</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__meta">
+                                    <span class="post__date">9-08-2016</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__upload">
+                                    <span class="post__upload-title">Image upload</span>
+                                    <span class="post__upload-date">11-04-2016</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post__image">
+                                <img src="assets/img/7.jpg" alt="Uploaded image">
+                            </div>
+
+                            <div class="post__content">
+                                <div class="post__meta">
+                                    <span class="post__date">Today</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__meta">
+                                    <span class="post__date">9-08-2016</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__upload">
+                                    <span class="post__upload-title">Image upload</span>
+                                    <span class="post__upload-date">11-04-2016</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post__image">
+                                <img src="assets/img/8.png" alt="Uploaded image">
+                            </div>
+
+                            <div class="post__content">
+                                <div class="post__meta">
+                                    <span class="post__date">Today</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__meta">
+                                    <span class="post__date">9-08-2016</span>
+
+                                    <div class="post__stats">
+                                        <span class="post__stat post__stat--likes">
+                                            <i class="icon-heart"></i>67
+                                        </span>
+                                        <span class="post__stat post__stat--comments">
+                                            <i class="icon-comment"></i>22
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="post__upload">
+                                    <span class="post__upload-title">Image upload</span>
+                                    <span class="post__upload-date">11-04-2016</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-16 col-lg-16 col-md-16 col-sm-16 col-xs-16 d-flex align-center">
+                    <a href="" class="btn btn-primary">LOAD MORE</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+<footer class="footer">
+
+</footer>
+
+<script src="./assets/js/jquery-3.7.0.min.js"></script>
+
+<script src="assets/js/js_app.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+<script>
+
+    // VIEW SWITCH
+    const postsSection = document.getElementById("postsSection");
+    const gridBtn = document.getElementById("gridBtn");
+    const listBtn = document.getElementById("listBtn");
+
+    gridBtn.addEventListener("click", () => {
+        postsSection.classList.add("posts--grid");
+        gridBtn.classList.add("btn-view--active");
+        listBtn.classList.remove("btn-view--active");
+    });
+
+    listBtn.addEventListener("click", () => {
+        postsSection.classList.remove("posts--grid");
+        listBtn.classList.add("btn-view--active");
+        gridBtn.classList.remove("btn-view--active");
+    });
+
+
+</script>
+
+
+<script>
+    $(function () {
+        // Ініціалізація datepicker
+        $("#dateFrom, #dateTo").datepicker({
+            dateFormat: "dd_mm_yy",
+            changeMonth: false,
+            changeYear: false,
+            disabledWeekDays: [0], // Sunday
+
+        });
+
+        // Логіка для діапазону
+        $("#dateFrom").on("change", function () {
+            $("#dateTo").datepicker("option", "minDate", $(this).val());
+        });
+
+        $("#dateTo").on("change", function () {
+            $("#dateFrom").datepicker("option", "maxDate", $(this).val());
+        });
+
+        // Кнопка очищення
+        $(".date__clear").on("click", function () {
+            $(this).siblings(".date__input").val("").datepicker("setDate", null);
+        });
+
+        // Відкриття календаря по кліку на іконку
+        $(".date__calendar").on("click", function () {
+            $(this).siblings(".date__input").datepicker("show");
+        });
+    });
+
+
+</script>
+
+</body>
+</html>
